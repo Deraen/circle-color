@@ -20,7 +20,7 @@
      :output-dir "resources/public/js/out"
      :verbose true
      :pretty-print true
-     :foreign-libs [{:file "resources/public/js/libs/Circle.js"
+     :foreign-libs [{:file "cljsjs.npm/node_modules/Circle.js"
                      :provides ["Circle"]
                      :module-type :commonjs
                      #_#_:preprocess :jsx}]

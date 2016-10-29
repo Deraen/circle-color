@@ -2,7 +2,7 @@
   :description "FIXME: write this!"
   :url "http://example.com/FIXME"
   :dependencies [[org.clojure/clojure "1.8.0"]
-                 [org.clojure/clojurescript "1.9.293" :exclusions [org.clojure/data.json]]
+                 [org.clojure/clojurescript "1.9.295" :exclusions [org.clojure/data.json]]
                  [com.google.javascript/closure-compiler-unshaded "1.0-SNAPSHOT"]
                  [org.clojure/data.json "0.2.6" :classifier "aot"]
                  [cljsjs.npm/object-assign "4.1.0"]
