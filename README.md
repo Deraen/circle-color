@@ -1,19 +1,7 @@
 # circle-color
 
-A small ClojureScript project to try out JS transforms and JS module support.
-
-## Description
-
-This ClojureScript project uses React to change the color of a circle via an input field.
-
-## Setup
-
-Build the project with:
-
-```
-$ ./scripts/build
-$ open resources/public/index.html
-```
+- https://github.com/google/closure-compiler/pull/2094
+- https://github.com/cljsjs/cljsjs.npm
 
 ## License
 

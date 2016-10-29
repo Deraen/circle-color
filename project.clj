@@ -1,13 +1,13 @@
 (defproject circle-color "0.1.0-SNAPSHOT"
   :description "FIXME: write this!"
   :url "http://example.com/FIXME"
-  :dependencies [[org.clojure/clojure "1.7.0"]
-                 [org.clojure/clojurescript "1.7.145"
-                  :exclusion [org.clojure/data.json]]
-                 [org.clojure/data.json "0.2.6" :classifier "aot"]]
+  :dependencies [[org.clojure/clojure "1.8.0"]
+                 [org.clojure/clojurescript "1.9.293" :exclusions [org.clojure/data.json]]
+                 [com.google.javascript/closure-compiler-unshaded "1.0-SNAPSHOT"]
+                 [org.clojure/data.json "0.2.6" :classifier "aot"]
+                 [cljsjs.npm/object-assign "4.1.0"]
+                 #_[cljsjs.npm/react "15.3.2" :exclusions [cljsjs.npm/fbjs cljsjs.npm/loose-envify]]]
   :jvm-opts ^:replace ["-Xmx1g" "-server"]
-  :plugins [[lein-npm "0.6.1"]]
-  :npm {:dependencies [[source-map-support "0.3.2"]]}
   :source-paths ["src" "target/classes"]
   :clean-targets ["out" "release"]
   :target-path "target")
