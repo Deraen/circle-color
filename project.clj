@@ -6,7 +6,7 @@
                  [com.google.javascript/closure-compiler-unshaded "1.0-SNAPSHOT"]
                  [org.clojure/data.json "0.2.6" :classifier "aot"]
                  [cljsjs.npm/object-assign "4.1.0"]
-                 #_[cljsjs.npm/react "15.3.2" :exclusions [cljsjs.npm/fbjs cljsjs.npm/loose-envify]]]
+                 [cljsjs.npm/react "15.3.2" :exclusions [cljsjs.npm/core-js #_cljsjs.npm/loose-envify]]]
   :jvm-opts ^:replace ["-Xmx1g" "-server"]
   :source-paths ["src" "target/classes"]
   :clean-targets ["out" "release"]
