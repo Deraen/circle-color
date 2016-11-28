@@ -3,13 +3,26 @@
 - https://github.com/google/closure-compiler/pull/2094
 - https://github.com/cljsjs/cljsjs.npm
 
+## Deps
+
+```
+ [cljsjs.npm/react "15.3.2"]
+   [cljsjs.npm/fbjs "0.2.1"]
+     [cljsjs.npm/core-js "1.2.7"]
+     [cljsjs.npm/promise "7.1.1"]
+       [cljsjs.npm/asap "2.0.5"]
+     [cljsjs.npm/whatwg-fetch "0.9.0"]
+   [cljsjs.npm/loose-envify "1.2.0"]
+     [cljsjs.npm/js-tokens "1.0.3"]
+```
+
 ## Status
 
 Lots of errors.
 
 Some are due to ES6 syntax being used.
 
-This excludes loose-envify package, which causes Closure to completely die with Internal Compiler Error.
+This excludes core-js package, which causes Closure to completely die with Internal Compiler Error: https://github.com/zloirock/core-js/blob/v1.2.7/client/shim.js#L519
 
 ```
 ERROR: JSC_COMMONJS_MODULE_LOAD_ERROR. Failed to load module "domain" at cljsjs.npm/node_modules/asap/raw.js line 81 : 21
